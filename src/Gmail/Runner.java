@@ -1,18 +1,18 @@
 package Gmail;
 import Setup.Drivers;
-public class Runner extends Drivers{
+public class Runner{
 	
 	public static void main(String[] args) throws Exception
 	{
-		Setup.Drivers.init();
-		Setup.Drivers.open_url("https://gmail.com");
-		Gmail.Login.login("vishwanathmalakar","Uonly@G2014");
+		Drivers.init();
+		Drivers.open_url("https://gmail.com");
+		Login.login("vishwanathmalakar","Uonly@G2014");
 	    
 	    while(true)
 	    {
-	    Gmail.Delete_page.select_delete();
-	    Gmail.Uncheck.hasattachment();
-	    Gmail.Delete_page.delete() ;
+	    Delete_page.select_delete();
+	    Uncheck.hasattachment();
+	    Delete_page.delete() ;
 	}
 	    
 	}
